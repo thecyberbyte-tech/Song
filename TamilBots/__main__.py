@@ -13,7 +13,7 @@ Hey Mr [{}](tg://user?id={}),
 
 This is CB_SongRoBot! 
 
-I'M Music Bot By @THECYBERBYE 🤖
+I'M Music Bot By @THECYBERBYTE 🤖
 
 Feel Free to use it anytime... 🥰🤗🥰
 
