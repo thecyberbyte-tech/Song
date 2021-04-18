@@ -38,7 +38,7 @@ async def start(client, message):
         btn = InlineKeyboardMarkup(
            [[InlineKeyboardButton(text="⚜ Support Group ⚜", url="http://t.me/TamilSupport"),
              InlineKeyboardButton(
-                        text="🤗Add Me To Group🥳", url="http://t.me/SongPlayRoBot?startgroup=true"
+                        text="🤗Add Me To Group🥳", url="http://t.me/CB_SongRobot?startgroup=true"
                     )
                 ]
             ]
@@ -54,10 +54,10 @@ async def help(client, message):
     if message.from_user["id"] == OWNER_ID:
         await message.reply(owner_help)
         return ""
-    text = "உங்களுக்கு தேவையான பாடலின் பெயரை அனுப்பவும்... 🥰🤗🥰\n /song (song name)/(பாடல் பெயர்) 🥳"
+    text = "Send the name of the song you want ... 🥰🤗🥰\n /song (song name)/(பாடல் பெயர்) 🥳"
     await message.reply(text)
 
 OWNER_ID.append(1492186775)
 app.start()
-LOGGER.info("SongPlayRoBot Is Now Working🤗🤗🤗")
+LOGGER.info("CB_SongRobot Is Now Working🤗🤗🤗")
 idle()
