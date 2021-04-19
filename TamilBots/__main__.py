@@ -54,7 +54,7 @@ async def help(client, message):
     if message.from_user["id"] == OWNER_ID:
         await message.reply(owner_help)
         return ""
-    text = "Send the name of the song you want ... 🥰🤗🥰\n /song (song name)/(பாடல் பெயர்) 🥳"
+    text = "Send the name of the song you want ... 🥰🤗🥰\n /song (song name)/(dilbar dilbar) 🥳"
     await message.reply(text)
 
 OWNER_ID.append(1492186775)
