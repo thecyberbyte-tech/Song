@@ -28,19 +28,19 @@ async def song(client, message):
     add_chat_to_db(str(chat_id))
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply("Enter a song name. Check /help")
+        await message.reply("Oops!, it seems that I stuck with a hard drive... Never go down. Please 😳 Enter a song name. Or feel free to send me /help")
         return ""
-    status = await message.reply(" Finding A Song 🎶 Please Wait ⏳️ [🚀](https://telegra.ph/file/e3233da9d2dd48f212798.mp4)")
+    status = await message.reply(" Finding the Song for you 🎶 Please Wait ⏳️ [🚀](https://telegra.ph/file/54bfa94b17ac7633653a6.mp4)")
     video_link = yt_search(args)
     if not video_link:
-        await status.edit("🥺Song not found.")
+        await status.edit("🤕Song not found.🤕")
         return ""
     yt = YouTube(video_link)
     audio = yt.streams.filter(only_audio=True).first()
     try:
         download = audio.download(filename=f"{str(user_id)}")
     except Exception as ex:
-        await status.edit("Failed to download song 😶")
+        await status.edit("Failed to download song 😢 😶")
         LOGGER.error(ex)
         return ""
     rename = os.rename(download, f"{str(user_id)}.mp3")
