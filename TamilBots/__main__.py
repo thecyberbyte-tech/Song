@@ -11,9 +11,9 @@ from TamilBots.sql.chat_sql import add_chat_to_db
 start_text = """
 Hey Mr [{}](tg://user?id={}),
 
-This is CB_SongRoBot! 
+This is SongRoBot! 
 
-I'M Music Bot By @THECYBERBYTE 🤖
+I'M Music Bot By @sam_pandey 🤖
 
 Feel Free to use it anytime... 🥰🤗🥰
 
@@ -36,9 +36,9 @@ async def start(client, message):
     name = message.from_user["first_name"]
     if message.chat.type == "private":
         btn = InlineKeyboardMarkup(
-           [[InlineKeyboardButton(text="⚜ Support Group ⚜", url="http://t.me/THECYBERBYTE"),
+           [[InlineKeyboardButton(text="⚜ Support Group ⚜", url="http://t.me/citels"),
              InlineKeyboardButton(
-                        text="🤗Add Me To Group🥳", url="http://t.me/CB_SongRobot?startgroup=true"
+                        text="🤗Add Me To Group🥳", url="http://t.me/SamSongRobot?startgroup=true"
                     )
                 ]
             ]
@@ -57,7 +57,7 @@ async def help(client, message):
     text = "Send the name of the song you want ... 🥰🤗🥰\n /song (song name)/(dilbar dilbar) 🥳"
     await message.reply(text)
 
-OWNER_ID.append(1492186775)
+OWNER_ID.append(1678741149)
 app.start()
-LOGGER.info("CB_SongRobot Is Now Working🤗🤗🤗")
+LOGGER.info("SamSongRobot Is Now Working🤗🤗🤗")
 idle()
